@@ -16,6 +16,7 @@ goto :eof
 
 goto :eof
 
+rem Create python project
 :pythonProject
 setlocal
     cd Python Projects
@@ -26,7 +27,7 @@ setlocal
 endlocal
 goto :eof
 
-
+rem Create flutter project
 :flutterProject
 setlocal
     cd Flutter Projects
@@ -37,6 +38,7 @@ setlocal
 endlocal
 goto :eof
 
+rem Commands to create github repository
 :gitCommands
 setlocal
     echo %projectFolder%
@@ -50,6 +52,7 @@ setlocal
 endlocal
 goto :openIDE
 
+rem If wrong input is entered
 :help
 setlocal
     echo Usage: create_repo ^<project_type^> ^<folder_name^>
